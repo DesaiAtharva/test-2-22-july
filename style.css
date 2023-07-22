@@ -1,0 +1,120 @@
+:root{
+    --nav-height:3.0625rem;
+    --search-height: 4.5rem;
+}
+
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s ease-in-out;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.containbox
+{
+    padding-inline: 3.06rem;
+    padding-block: 2.4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 2rem;
+}
+
+.nav,
+.nav_left,
+.nav_right,
+.nav_other
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.nav{
+    justify-content: space-between;
+}
+
+.nav_logo{
+    width: 3.0625rem;
+    height: 3.0625rem;
+    border-radius: 7.71875rem;
+    background: url(),lightgray 50% /cover no-repeat;
+    background-blend-mode: darken;
+    flex-shrink: 0;
+}
+
+.nav_name{
+    display: inline-flex;
+    padding: 0.625rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
+
+.nav_name_text{
+    font-size: 2.4375rem;
+    font-weight: 500;
+    color: #373737;
+}
+
+.nav_name_in{
+    background: linear-gradient(180deg, #2B7AC1 0%, #3AB26F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.4375rem;
+    font-weight: 500;
+}
+
+.nav_extra{
+    width: 6rem;
+    padding: 0.625rem;
+    justify-content: space-between;
+}
+
+.nav_extra_line{
+    width: 0.0625rem;
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.61);    
+}
+.nav_extra_text{
+    font-size: 1.5625rem;
+    font-weight: 300;
+
+}
+
+.nav_links{
+    width: 15.3125rem;
+    height: 3.0625rem;
+    padding: 0.625rem;
+    justify-content: space-between;
+    margin-right: 1.69rem;
+
+}
+
+.nav.link{
+    color: #373737;
+    font-size: 1.375rem;
+    font-weight: 300;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.nav_link_img{
+    width: 1.0625rem;
+    height: 1.25rem;
+}
+
+.nav_button{width: 13.9375rem;
+    height: var(--nav-height);
+    border-radius: 1.46875rem;
+    background: #184655;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: normal;
+
+}
